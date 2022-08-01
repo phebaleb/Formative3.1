@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>News</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="news.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>The Current Column</h1>
+
+        <!-- Search bar -->
+        <select name="filter" id="filter">
+            <option value="choose">Choose...</option>
+            <option value="country">Country</option>
+            <option value="category">Category</option>
+            <option value="source">Source</option>
+        </select>
+        <!-- Filter dropdown -->
+        <input type="text" placeholder="Search...">
+        <button class="search-button button">
+            <i class="bi bi-search"></i>
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/news.js"></script>
+</body>
+
+</html>
